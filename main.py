@@ -5,11 +5,14 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QMessageBox
 from PyQt5 import uic
 
+from UI.addEditCoffeeForm import Ui_AddWindow
+from UI.main import Ui_MainWindow
 
-class AddForm(QMainWindow):
+
+class AddForm(QMainWindow, Ui_AddWindow):
     def __init__(self, connect, main):
         super().__init__()
-        uic.loadUi('addEditCoffeeForm.ui', self)
+        self.setupUi(self)
         self.connect = connect
         self.main = main
         self.pushButton.clicked.connect(self.check)
@@ -44,10 +47,10 @@ class AddForm(QMainWindow):
         self.close()
 
 
-class EditForm(QMainWindow):
+class EditForm(QMainWindow, Ui_AddWindow):
     def __init__(self, connect, main, item):
         super().__init__()
-        uic.loadUi('addEditCoffeeForm.ui', self)
+        self.setupUi(self)
         self.connect = connect
         self.main = main
         self.item = item
@@ -96,11 +99,11 @@ class EditForm(QMainWindow):
         self.close()
 
 
-class MyWindow(QMainWindow):
+class MyWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('main.ui', self)
-        self.connect = sqlite3.connect('coffee.sqlite')
+        self.setupUi(self)
+        self.connect = sqlite3.connect('data/coffee.sqlite')
         self.add_btn.clicked.connect(self.add_coffee)
         self.edit_btn.clicked.connect(self.edit_coffee)
         self.initUi()
