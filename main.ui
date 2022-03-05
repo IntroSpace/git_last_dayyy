@@ -6,17 +6,31 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>729</width>
-    <height>309</height>
+    <width>690</width>
+    <height>328</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Эспрессо</string>
+   <string>Капучино</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
+    <item row="1" column="0" colspan="3">
      <widget class="QTableWidget" name="tableWidget"/>
+    </item>
+    <item row="3" column="0" colspan="3">
+     <widget class="QPushButton" name="add_btn">
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="3">
+     <widget class="QPushButton" name="edit_btn">
+      <property name="text">
+       <string>Изменить</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>382</width>
+    <height>251</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Молотый/В зернах</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Название сорта</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Степень обжарки</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="4">
+     <widget class="QLineEdit" name="name_edit"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Цена</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Описание вкуса</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Объем порции</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="4">
+     <widget class="QComboBox" name="degree_box"/>
+    </item>
+    <item row="6" column="1" colspan="4">
+     <widget class="QComboBox" name="kind_box"/>
+    </item>
+    <item row="7" column="1" colspan="4">
+     <widget class="QLineEdit" name="desc_edit"/>
+    </item>
+    <item row="8" column="1" colspan="4">
+     <widget class="QLineEdit" name="price_edit"/>
+    </item>
+    <item row="9" column="1" colspan="4">
+     <widget class="QLineEdit" name="volume_edit"/>
+    </item>
+    <item row="10" column="0" colspan="5">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Сохранить</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
